@@ -2,7 +2,8 @@
 <!-- Alyssa Day, Spring 2025, CSE 445, Assignment 4-->
 
 <!-- This file represents 10 hotels-->
-<Hotels>
+<Hotels xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:noNamespaceSchemaLocation="https://amakers1.github.io/CSE445_A4/Hotels.xsd">
 	
 	<!-- Hotel 1 -->
 	<Hotel Rating="4.2">

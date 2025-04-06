@@ -4,7 +4,8 @@
 <!-- This file represents 10 hotels with errors-->
 
 <!-- Root element is Hotel instead of Hotels-->
-<Hotel>
+<Hotel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xsi:noNamespaceSchemaLocation="https://amakers1.github.io/CSE445_A4/Hotels.xsd">
 	
 	<!-- Hotel 1, missing NearstAirport attribute -->
 	<Hotel Rating="4.2">
