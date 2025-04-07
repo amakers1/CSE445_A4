@@ -24,7 +24,7 @@
 	<!-- Hotel 2, missing phone element -->
 	<Hotel Rating="4.6">
 		<Name>Fairmont Scottsdale Princess</Name>
-		<Address NearestAirport="Sky Harbor">
+		<Address NearstAirport="Sky Harbor">
 			<Number>7575</Number>
 			<Street>E. Princess Dr</Street>
 			<City>Scottsdale</City>
@@ -37,7 +37,7 @@
 	<Hotel Rating="4.4">
 		<Name>Hotel Albuquerque at Old Town</Name>
 		<Phone>505-843-6300</Phone>
-		<Address NearestAirport="Albuquerque International Sunport Airport">
+		<Address NearstAirport="Albuquerque International Sunport Airport">
 			<Number>800</Number>
 			<Street>Rio Grande Blvd NW</Street>
 			<City>Albuquerque</City>
@@ -50,7 +50,7 @@
 		<Name>The St. Mary's Inn Bed and Breakfast</Name>
 		<Name>St. Mary's Inn</Name>
 		<Phone>719-540-2222</Phone>
-		<Address NearestAirport="Colorado Springs Airport">
+		<Address NearstAirport="Colorado Springs Airport">
 			<Number>530</Number>
 			<Street>N. Nevada Ave</Street>
 			<City>Colorado Springs</City>
@@ -63,7 +63,7 @@
 	<Hotel Rating="4.2">
 		<Name>Gaylord Rockies Resort and Convention Center</Name>
 		<Phone>720-452-6900</Phone>
-		<Address NearestAirport="Denver International">
+		<Address NearstAirport="Denver International">
 			<Number>6700</Number>
 			<Street>N. Gaylord Rockies Blvd</Street>
 			<City>Aurora</City>
@@ -76,7 +76,7 @@
 	<Hotel Rating="4.5">
 		<Name>Summer Sands Suites</Name>
 		<Phone>910-256-4175</Phone>
-		<Address NearestAirport="Wilmington International">
+		<Address NearstAirport="Wilmington International">
 			<Number>104</Number>
 			<Street>S. Lumina Ave</Street>
 			<City>Wrightsville Beach</City>
@@ -89,7 +89,7 @@
 	<Hotel Rating="4.2">
 		<Name>Seaside</Name>
 		<Phone>866-914-5420</Phone>
-		<Address NearestAirport="Myrtle Beach International">
+		<Address NearstAirport="Myrtle Beach International">
 			<Number>2301</Number>
 			<Street>S. Ocean Blvd</Street>
 			<City>North Myrtle Beach</City>
@@ -102,7 +102,7 @@
 	<Hotel Rating="4.7">
 		<Name>Perry Lane Hotel</Name>
 		<Phone>912-415-9000</Phone>
-		<Address NearestAirport="Savannah Hilton Head International">
+		<Address NearstAirport="Savannah Hilton Head International">
 			<Number>256</Number>
 			<Street>E. Perry St</Street>
 			<City>Savannah</City>
@@ -115,7 +115,7 @@
 	<Hotel Rating="4.6">
 		<Name>One Ocean Resort and Spa</Name>
 		<Phone>904-249-7402</Phone>
-		<Address NearestAirport="Jacksonville International">
+		<Address NearstAirport="Jacksonville International">
 			<Number>1</Number>
 			<Street>Ocean Blvd</Street>
 			<City>Atlantic Beach</City>
@@ -128,7 +128,7 @@
 	<Hotel Rating="4.4">
 		<Name>Riptide Oceanfront Hotel and Tiki Bar</Name>
 		<Phone>954-921-7667</Phone>
-		<Address NearestAirport="Fort Lauderdale International">
+		<Address NearstAirport="Fort Lauderdale International">
 			<Number>2300</Number>
 			<Street>N. Surf Rd</Street>
 			<City>Hollywood</City>
