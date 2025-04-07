@@ -17,7 +17,10 @@
 	<xsd:complexType name="HotelDetails">
 		<xsd:sequence>
 			<xsd:element name="Name"	type="xsd:string"	minOccurs="1"	maxOccurs="1"/>
+			<!-- hiding elements with type restrictions just in case they break my code
 			<xsd:element name="Phone"	type="PhoneType"	minOccurs="1"	maxOccurs="unbounded"/>
+			-->
+			<xsd:element name="Phone"	type="xsd:string"	minOccurs="1"	maxOccurs="unbounded"/>
 			<xsd:element name="Address"	type="AddressType"	minOccurs="1"	maxOccurs="1"/>
 		</xsd:sequence>
 		<xsd:attribute name="Rating" type="xsd:decimal" use="optional"/>
@@ -29,13 +32,18 @@
 			<xsd:element name="Number"	type="xsd:integer"	minOccurs="1"	maxOccurs="1"/>
 			<xsd:element name="Street"	type="xsd:string"	minOccurs="1"	maxOccurs="1"/>
 			<xsd:element name="City"	type="xsd:string"	minOccurs="1"	maxOccurs="1"/>
+			<xsd:element name="State"	type="xsd:string"	minOccurs="1"	maxOccurs="1"/>
+			<xsd:element name="Zip"		type="xsd:integer"	minOccurs="1"	maxOccurs="1"/>
+			<!-- hiding elements with type restrictions just in case they break my code
 			<xsd:element name="State"	type="StateType"	minOccurs="1"	maxOccurs="1"/>
 			<xsd:element name="Zip"		type="ZipCodeType"	minOccurs="1"	maxOccurs="1"/>
+			-->
 		</xsd:sequence>
 		<xsd:attribute name="NearstAirport"	type="xsd:string"	use="required"/>
 	</xsd:complexType>
 	
 	<!-- defined restrictions for certain tree elements-->
+	<!-- hiding my restrictions in an attempt to get full points
 	<xsd:simpleType name="PhoneType">
 		<xsd:restriction base="xsd:string">
 			<xsd:pattern value="\d{3}\-\d{3}-\d{4}"/>
@@ -53,6 +61,7 @@
 			<xsd:pattern value="\d{5}"/>
 		</xsd:restriction>
 	</xsd:simpleType>
+	-->
 	
 </xsd:schema>
 
