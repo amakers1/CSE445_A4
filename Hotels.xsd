@@ -11,7 +11,6 @@
 		<xsd:sequence>
 			<xsd:element name="Hotel"	type="HotelDetails"	minOccurs="1"	maxOccurs="unbounded"/>
 		</xsd:sequence>
-		<xsd:attribute name="Rating" type="RatingType" use="optional"/>
 	</xsd:complexType>
 	
 	<!-- Tier 3 of tree-->
@@ -21,6 +20,7 @@
 			<xsd:element name="Phone"	type="PhoneType"	minOccurs="1"	maxOccurs="unbounded"/>
 			<xsd:element name="Address"	type="AddressType"	minOccurs="1"	maxOccurs="1"/>
 		</xsd:sequence>
+		<xsd:attribute name="Rating" type="RatingType" use="optional"/>
 	</xsd:complexType>
 	
 	<!-- Tier 4 of tree-->
