@@ -20,7 +20,7 @@
 			<xsd:element name="Phone"	type="PhoneType"	minOccurs="1"	maxOccurs="unbounded"/>
 			<xsd:element name="Address"	type="AddressType"	minOccurs="1"	maxOccurs="1"/>
 		</xsd:sequence>
-		<xsd:attribute name="Rating" type="RatingType" use="optional"/>
+		<xsd:attribute name="Rating" type="xsd:decimal" use="optional"/>
 	</xsd:complexType>
 	
 	<!-- Tier 4 of tree-->
@@ -39,12 +39,6 @@
 	<xsd:simpleType name="PhoneType">
 		<xsd:restriction base="xsd:string">
 			<xsd:pattern value="\d{3}\-\d{3}-\d{4}"/>
-		</xsd:restriction>
-	</xsd:simpleType>
-	
-	<xsd:simpleType name="RatingType">
-		<xsd:restriction base="xsd:string">
-			<xsd:pattern value="[0-5][\.][0-9]}"/>
 		</xsd:restriction>
 	</xsd:simpleType>
 
