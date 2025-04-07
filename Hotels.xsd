@@ -1,7 +1,7 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
 	<!-- Alyssa Day, Spring 2025, CSE 445, Assignment 4-->
-	
+
 	<xs:element name="Hotels">
 		<xs:complexType>
 			<xs:sequence>
@@ -31,7 +31,7 @@
 										</xs:element>
 										<xs:element name="Zip">
 											<xs:simpleType>
-												<xs:restriction base="xs:string">
+												<xs:restriction base="xs:integer">
 													<xs:pattern value="[0-9]{5}"/>
 												</xs:restriction>
 											</xs:simpleType>
