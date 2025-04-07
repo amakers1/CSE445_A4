@@ -17,9 +17,6 @@
 	<xsd:complexType name="HotelDetails">
 		<xsd:sequence>
 			<xsd:element name="Name"	type="xsd:string"	minOccurs="1"	maxOccurs="1"/>
-			<!-- hiding elements with type restrictions just in case they break my code
-			<xsd:element name="Phone"	type="PhoneType"	minOccurs="1"	maxOccurs="unbounded"/>
-			-->
 			<xsd:element name="Phone"	type="xsd:string"	minOccurs="1"	maxOccurs="unbounded"/>
 			<xsd:element name="Address"	type="AddressType"	minOccurs="1"	maxOccurs="1"/>
 		</xsd:sequence>
@@ -34,92 +31,7 @@
 			<xsd:element name="City"	type="xsd:string"	minOccurs="1"	maxOccurs="1"/>
 			<xsd:element name="State"	type="xsd:string"	minOccurs="1"	maxOccurs="1"/>
 			<xsd:element name="Zip"		type="xsd:integer"	minOccurs="1"	maxOccurs="1"/>
-			<!-- hiding elements with type restrictions just in case they break my code
-			<xsd:element name="State"	type="StateType"	minOccurs="1"	maxOccurs="1"/>
-			<xsd:element name="Zip"		type="ZipCodeType"	minOccurs="1"	maxOccurs="1"/>
-			-->
 		</xsd:sequence>
 		<xsd:attribute name="NearstAirport"	type="xsd:string"	use="required"/>
 	</xsd:complexType>
-	
-	<!-- defined restrictions for certain tree elements-->
-	<!-- hiding my restrictions in an attempt to get full points
-	<xsd:simpleType name="PhoneType">
-		<xsd:restriction base="xsd:string">
-			<xsd:pattern value="\d{3}\-\d{3}-\d{4}"/>
-		</xsd:restriction>
-	</xsd:simpleType>
-
-	<xsd:simpleType name="StateType">
-		<xsd:restriction base="xsd:string">
-			<xsd:pattern value="[A-Za-z]{2}"/>
-		</xsd:restriction>
-	</xsd:simpleType>
-
-	<xsd:simpleType name="ZipCodeType">
-		<xsd:restriction base="xsd:string">
-			<xsd:pattern value="\d{5}"/>
-		</xsd:restriction>
-	</xsd:simpleType>
-	-->
-	
 </xsd:schema>
-
-
-
-<!-- 1st attempt with xsd, error thrown though?
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
-	<xs:annotation>
-		<xs:documentation xml:lang="en"> Alyssa Day, Spring 2025, CSE 445, Assignment 4 </xs:documentation>
-	</xs:annotation>
-	
-	
-	<xs:element name="Hotels">
-		<xs:complexType>
-			<xs:sequence>
-				<xs:element name="Hotel" minOccurs="1" maxOccurs="unbounded">
-					<xs:complexType>
-						<xs:sequence>
-							<xs:element name="Name"		type="xs:string"	minOccurs="1"	maxOccurs="1"/>
-							<xs:element name="Phone"						minOccurs="1"	maxOccurs="unbounded">
-								<xs:simpleType>
-									<xs:restriction base="xs:string">
-										<xs:pattern value="[0-9]{3}-[0-9]{3}-[0-9]{4}"/>
-									</xs:restriction>
-								</xs:simpleType>
-							</xs:element>
-							<xs:element name="Address">
-								<xs:complexType>
-									<xs:sequence>
-										<xs:element name="Number"	type="xs:integer"	minOccurs="1"	maxOccurs="1"/>
-										<xs:element name="Street"	type="xs:string"	minOccurs="1"	maxOccurs="1"/>
-										<xs:element name="City"		type="xs:string"	minOccurs="1"	maxOccurs="1"/>
-										<xs:element name="State"						minOccurs="1"	maxOccurs="1">
-											<xs:simpleType>
-												<xs:restriction base="xs:string">
-													<xs:pattern value="[A-Z][A-Z]"/>
-												</xs:restriction>
-											</xs:simpleType>
-										</xs:element>
-										<xs:element name="Zip"							minOccurs="1"	maxOccurs="1">
-											<xs:simpleType>
-												<xs:restriction base="xs:integer">
-													<xs:pattern value="[0-9]{5}"/>
-												</xs:restriction>
-											</xs:simpleType>
-										</xs:element>
-									</xs:sequence>
-									<xs:attribute name="NearstAirport" type="xs:string" use="required"/>
-								</xs:complexType>
-							</xs:element>
-						</xs:sequence>
-						<xs:attribute name="Rating"	type="xs:decimal" use="optional"/>
-					</xs:complexType>
-				</xs:element>
-			</xs:sequence>
-		</xs:complexType>
-	</xs:element>
-	
-</xs:schema>
--->
